@@ -22,8 +22,8 @@ def train(weather_variable="temperature"):
 
     joblib.dump(model, os.path.join(BASE_DIR, f"{weather_variable}.joblib"))
 
-if __name__ == "__main__":
-    train('pressure')
+# if __name__ == "__main__":
+#     train('pressure')
 
 def predict(weather_variable="temperature", days=7):
 
